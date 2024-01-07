@@ -102,7 +102,7 @@ export default function Home() {
             <h2 className="text-lg"><span className='font-bold'>{data.location.name}</span> ({data.location.country})</h2>
             <p><strong>Temperature:</strong> {data.current.temp_c}°C / {data.current.temp_f}°F</p>
             <p><strong>Condition:</strong> {data.current.condition.text}</p>
-            <p><strong>Rychlost větru:</strong> {data.current.wind_kph} km/h</p>
+            <p><strong>Wind speed:</strong> {data.current.wind_kph} km/h</p>
             <img src={`http:${data.current.condition.icon}`} alt="weather icon" />
           </div>
         ))}
@@ -120,7 +120,7 @@ export default function Home() {
               <h2 className="text-lg font-bold">{data.location.name}</h2>
               <p><strong>Temperature:</strong> {data.current.temp_c}°C / {data.current.temp_f}°F</p>
               <p><strong>Condition:</strong> {data.current.condition.text}</p>
-              <p><strong>Rychlost větru:</strong> {data.current.wind_kph} km/h</p>
+              <p><strong>Wind speed:</strong> {data.current.wind_kph} km/h</p>
               <img src={`http:${data.current.condition.icon}`} alt="weather icon" />
             </div>
           ))}
